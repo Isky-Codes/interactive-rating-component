@@ -1,0 +1,47 @@
+/****************************
+
+            LAYOUT
+
+****************************/
+
+/*BACKGROUND CONTAINER LAYOUT*/
+.backgroundContainer {
+    width: 100%;
+    height: 83em;
+    position: relative;
+}
+
+/*RATING CONTAINER LAYOUT*/
+.ratingContainer {
+    width: 30%;
+    height: 40em;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+
+}
+
+
+
+/****************************
+
+            DESIGN
+
+****************************/
+
+/*BACKGROUND CONTAINER COLOR*/
+.backgroundContainer {
+    background-color: hsl(216, 12%, 8%);
+}
+
+/*RATING CONTAINER LAYOUT*/
+.ratingContainer {
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 25px;
+}
