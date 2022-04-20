@@ -104,6 +104,15 @@
     height: 80px;
 }
 
+/*changes colour on hover*/
+
+.ratingButtons:hover {
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+    
+}
+
 /*SUBMIT BUTTON DESIGN*/
 .submitButton {
     color: white;
@@ -120,6 +129,7 @@
 .submitButton:hover {
     background-color: white;
     color: hsl(25, 97%, 53%);
+    cursor: pointer;
 }
 
 /* TEXT FONT */
