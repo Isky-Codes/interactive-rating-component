@@ -13,7 +13,7 @@
 
 /*RATING CONTAINER LAYOUT*/
 .ratingContainer {
-    width: 30%;
+    width: 25%;
     height: 40em;
     margin: 0;
     position: absolute;
@@ -23,10 +23,49 @@
     transform: translate(-50%, -50%);
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
-
+    justify-content: space-around;
+    gap: 10px;
 }
 
+/*STAR LOGO CONTAINER*/
+.starLogoContainer {
+    width: 10%;
+    height: 70px;
+    background-color: hsl(219, 18%, 25%);
+    border-radius: 50%;
+    margin-left: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+/*TEXT CONTAINER*/
+.textContainer {
+    height: 150px;
+    margin-top: -40px;
+}
+
+/*RATING BUTTONS CONTAINER LAYOUT*/
+.ratingButtonsContainer {
+    height: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -70px;
+    
+}
+
+/*SUBMIT BUTTON CONTAINER*/
+.submitButtonContainer {
+    width: 90%;
+    height: 70px;
+    margin: 0 auto;
+    margin-top: -50px;
+}
 
 
 /****************************
@@ -34,7 +73,10 @@
             DESIGN
 
 ****************************/
-
+/*ALL FONTS*/
+* {
+    font-family: 'Overpass', sans-serif;
+}
 /*BACKGROUND CONTAINER COLOR*/
 .backgroundContainer {
     background-color: hsl(216, 12%, 8%);
@@ -44,4 +86,55 @@
 .ratingContainer {
     background-color: hsl(213, 19%, 18%);
     border-radius: 25px;
+}
+
+/*STAR LOGO DESIGN*/
+#starLogo {
+    width: 40%;
+    height: 20px;
+
+}
+
+/*RATING BUTTONS DESIGN*/
+.ratingButtons {
+    color: hsl(217, 12%, 63%);
+    background-color: hsl(219, 18%, 25%);
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+}
+
+/*SUBMIT BUTTON DESIGN*/
+.submitButton {
+    color: white;
+    font-weight: 700;
+    font-size: 1.2em;
+    background-color: hsl(25, 97%, 53%);
+    width: 100%;
+    height: 70px;
+    border-radius: 200px;
+    letter-spacing: 0.5em;
+}
+
+/*changes on hover*/
+.submitButton:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+/* TEXT FONT */
+.textContainer h1 {
+    color: white;
+    font-size: 35px;
+}
+
+.textContainer p {
+    color: hsl(217, 12%, 63%);
+    font-size: 18px;
+    padding-top: 20px;
+    line-height: 28px;
+}
+
+.textContainer p, .textContainer h1 {
+    padding-left: 50px;
 }
