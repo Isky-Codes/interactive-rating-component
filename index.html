@@ -14,6 +14,8 @@
 </head>
 <body>
   <main class="backgroundContainer">
+    
+    <!--MAIN RATING CARD-->
     <section class="ratingContainer">
 
       <div class="starLogoContainer">
@@ -27,15 +29,35 @@
       </div>
       
       <div class="ratingButtonsContainer">
-        <button class="ratingButtons" type="button">1</button>
-        <button class="ratingButtons" type="button">2</button>
-        <button class="ratingButtons" type="button">3</button>
-        <button class="ratingButtons" type="button">4</button>
-        <button class="ratingButtons" type="button">5</button>
+        <button class="ratingButtons unclickedColour" type="button">1</button>
+        <button class="ratingButtons unclickedColour" type="button">2</button>
+        <button class="ratingButtons unclickedColour" type="button">3</button>
+        <button class="ratingButtons unclickedColour" type="button">4</button>
+        <button class="ratingButtons unclickedColour" type="button">5</button>
       </div>
       
       <div class="submitButtonContainer">
         <button class="submitButton" type="button">SUBMIT</button>
+      </div>
+    
+    </section>
+
+    <!--THANK YOU CARD-->
+
+    <section class="thankYouContainer">
+    
+      <div class="phoneLogoContainer">
+        <img id="phoneLogo" src="images/illustration-thank-you.svg" alt="Phone Connection">
+      </div>
+        
+      
+      <div class="chosenRatingContainer">
+        <p class="chosenRatingText">You have selected <span id="chosenNumber"></span> out of 5</p>
+      </div>
+      
+      <div class="thankYouMessageContainer">
+        <h1>Thank you!</h1>
+        <p>We appreciate you taking the time to give a rating.<br> If you ever need more support don't hesitate to <br> get in touch!</p>
       </div>
     
     </section>
@@ -47,14 +69,3 @@
 </html>
 
 
-<!-- 
-  1. Create a body section for the fully dark background. Create a class: backgroundContainer
-  2. Create a container (class: ratingContainer) for the full box (guess size) that holds:
-      -Add an unordered list with several lists containing:
-          --A circle with the star logo.  
-          --A <h1> with the "How did we do?" text.
-          --A <p> with the "Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!" text.
-          --A container that holds:
-              ---Ordered circular buttons done with flex display
-          --A wide "SUBMIT" button in orange with white font.
--->
